@@ -10,16 +10,15 @@ body {
 
 .header,
 .footer,
-.signup{
-    padding: 8px 150px;
+.signup {
+    padding: 20px 150px;
 }
 
 
 .header,
 .footer,
-.signup, 
-.signuptext
- {
+.signup,
+.signuptext {
     display: flex;
 }
 
@@ -28,17 +27,19 @@ body {
     background-color: #006c68;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 150px;
 }
 
 
 .headerlogo img {
-    width: 200px;
+    width: 150px;
 }
 
 .headerlinks {
     display: flex;
     gap: 120px;
-    font-size: 20px;
+    font-size: 28px;
+    font-weight: 500;
 }
 
 a {
@@ -46,27 +47,66 @@ a {
     color: #faf6f3;
 }
 
-.signup{
+.signup {
     background-color: #006c68;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 20px;
 }
-.signupimg img{
-    width: 450px;
+
+.signupimg img {
+    width: 400px;
     margin: auto;
     display: inline-block;
 }
-.imageholder{
+
+.imageholder {
     background-color: #faf6f3;
-    border-radius: 330px;
+    border-radius: 25px;
     width: 600px;
     text-align: center;
 }
 
-.signuptext{
+.signuptext {
     flex-direction: column;
     color: #faf6f3;
+    max-width: 650px;
+    gap: 40px;
 }
 
-img{
+.signup button {
+    background-color: #e69500;
+    color: #faf6f3;
+    box-shadow: 0 9px #004340b3;
+}
+
+.signup button:hover {
+    background-color: #cc8400;
+}
+
+.signup button:active {
+    background-color: #cc8400;
+    box-shadow: 0 5px #002927b3;
+    transform: translateY(4px);
+}
+
+img {
     width: 200px;
+}
+
+h1,
+p {
+    margin: 0;
+}
+
+button {
+    padding: 18px;
+    border-radius: 24px;
+    border-width: 0;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
