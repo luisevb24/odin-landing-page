@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    /* You can change this from 100 to 900 */
+    font-style: normal;
+
+}
+
+.header,
+.footer,
+.signup{
+    padding: 8px 150px;
+}
+
+
+.header,
+.footer,
+.signup, 
+.signuptext
+ {
+    display: flex;
+}
+
+
+.header {
+    background-color: #006c68;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headerlogo img {
+    width: 200px;
+}
+
+.headerlinks {
+    display: flex;
+    gap: 120px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #faf6f3;
+}
+
+.signup{
+    background-color: #006c68;
+    justify-content: space-between;
+}
+.signupimg img{
+    width: 450px;
+    margin: auto;
+    display: inline-block;
+}
+.imageholder{
+    background-color: #faf6f3;
+    border-radius: 330px;
+    width: 600px;
+    text-align: center;
+}
+
+.signuptext{
+    flex-direction: column;
+    color: #faf6f3;
+}
+
+img{
+    width: 200px;
+}
