@@ -6,7 +6,7 @@ body {
     /* You can change this from 100 to 900 */
     font-style: normal;
     color: #052a30;
-
+    background-color: #006c68;
 }
 
 .header,
@@ -38,6 +38,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 30px;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
