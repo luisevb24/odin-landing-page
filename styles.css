@@ -5,20 +5,30 @@ body {
     font-weight: 500;
     /* You can change this from 100 to 900 */
     font-style: normal;
+    color: #052a30;
 
 }
-
-.header,
-.footer,
-.signup {
-    padding: 20px 150px;
-}
-
 
 .header,
 .footer,
 .signup,
-.signuptext {
+.randominfo,
+.quotecontainer,
+.hookcontainer {
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+.header,
+.signup,
+.signuptext,
+.randominfo,
+.imgtextcontainer,
+.imgtext,
+.quotecontainer,
+.hookcontainer,
+.hookbanner {
     display: flex;
 }
 
@@ -27,12 +37,12 @@ body {
     background-color: #006c68;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 150px;
+    padding-top: 30px;
 }
 
 
 .headerlogo img {
-    width: 150px;
+    width: 120px;
 }
 
 .headerlinks {
@@ -45,6 +55,9 @@ body {
 a {
     text-decoration: none;
     color: #faf6f3;
+}
+
+.content {
 }
 
 .signup {
@@ -76,28 +89,149 @@ a {
     gap: 40px;
 }
 
-.signup button {
+.signupbutton {
     background-color: #e69500;
     color: #faf6f3;
     box-shadow: 0 9px #004340b3;
 }
 
-.signup button:hover {
+.signupbutton:hover {
     background-color: #cc8400;
 }
 
-.signup button:active {
+.signupbutton:active {
     background-color: #cc8400;
     box-shadow: 0 5px #002927b3;
     transform: translateY(4px);
 }
 
+.randominfo {
+    background-color: #faf6f3;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.infotitle {
+    padding-bottom: 40px;
+}
+
+.imgtextcontainer {
+    gap: 50px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imgtext {
+    text-align: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 250px;
+    width: 250px;
+    gap: 10px;
+}
+
+.imgtext img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 4px solid #006c68;
+    border-radius: 24px;
+}
+
+.imgtext img:hover {
+    transform: translateY(-12px);
+    filter: drop-shadow(16px 16px rgba(0, 0, 0, 0.328));
+}
+
+.quotecontainer {
+    background-color: #c5d3b3;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 600px;
+}
+
+.quoteblock {
+    background-color: #7e8671;
+    padding: 25px;
+    border: 2px solid #5d6354;
+    border-left-width: 30px;
+    max-width: 800px;
+}
+.quotetext{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 1.5em;
+    line-height: 1.5;
+    color:#faf6f3;
+}
+
+.quotetext--credit{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+    font-size: 1em;
+}
+.quoteblock--quoted::before{
+    content:"\201c";
+    font-size: 100px;
+    color: #5d6354;
+    display: block;
+    margin-bottom: -40px;
+    margin-top: -20px;
+    font-family: "Inter Tight", sans-serif;
+
+    
+}
+
+
+
+.hookcontainer{
+    background-color: #faf6f3;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: 500px;
+}
+
+.hookbanner{
+    padding: 45px 100px;
+    background-color: #006c68;
+    color: #faf6f3;
+    border-radius: 10px;
+    gap: 300px
+}
+.hooktext h3{
+    margin-bottom: 12px;
+}
 img {
     width: 200px;
 }
 
+.smallerbutton{
+font-size: 18px;
+padding: 0px 30px;
+}
+
+.footer{
+    background-color: #052a30;
+    text-align: center;
+    padding: 40px;
+    color: #faf6f3;
+}
+
 h1,
-p {
+p,
+h2,
+h3,
+h4,
+h5 {
     margin: 0;
 }
 
@@ -109,4 +243,5 @@ button {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
+    margin: 0;
 }
